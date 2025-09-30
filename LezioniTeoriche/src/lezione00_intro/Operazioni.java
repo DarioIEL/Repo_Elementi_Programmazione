@@ -6,7 +6,9 @@ public class Operazioni {
 		//Faccio qualche operazione matematica
 		byte num1 = 10;
 		byte num2 = 20;
+<<<<<<< Updated upstream
 		byte num8 = 88;
+=======
 		byte num8 = 80;
 >>>>>>> Stashed changes
 		
