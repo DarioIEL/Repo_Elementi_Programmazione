@@ -6,6 +6,7 @@ public class Operazioni {
 		//Faccio qualche operazione matematica
 		byte num1 = 10;
 		byte num2 = 20;
+		byte num8 = 8;
 		
 		byte somma = (byte) (num1 + num2);
 		System.out.println(somma);
