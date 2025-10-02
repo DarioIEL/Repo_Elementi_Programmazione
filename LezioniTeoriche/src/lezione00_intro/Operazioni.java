@@ -7,8 +7,6 @@ public class Operazioni {
 		byte num1 = 10;
 		byte num2 = 20;
 
-		byte num8 = 80;
-
 		
 		byte somma = (byte) (num1 + num2);
 		System.out.println(somma);
