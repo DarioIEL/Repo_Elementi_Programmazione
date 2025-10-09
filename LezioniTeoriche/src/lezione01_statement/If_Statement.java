@@ -4,9 +4,20 @@ public class If_Statement {
 	public static void main(String[] args) {
 
 		/**
-		 * Sintassi IF if(condizione){ ...eseguo se condizione è TRUE }else
-		 * if(condizione2){ ...eseguo se condizione2 è TRUE } else{ ...eseguo se tutto
-		 * il resto è FALSE }
+		 * Sintassi IF 
+		 * if(condizione){
+		 *  
+		 * ...eseguo se condizione è TRUE
+		 *  
+		 * }else if(condizione2){ 
+		 * 
+		 * ..eseguo se condizione2 è TRUE 
+		 * 
+		 * } else{ 
+		 * 
+		 * ...eseguo se tutto il resto è FALSE 
+		 * 
+		 * }
 		 */
 
 		boolean piove = true;
@@ -19,7 +30,7 @@ public class If_Statement {
 
 		// esempio
 
-		int miaEta = 2;
+		int miaEta = -2;
 
 		if (miaEta >= 18) {
 			System.out.println("Sei maggiorenne!");
@@ -40,11 +51,11 @@ public class If_Statement {
 			System.out.println("Hai inserito un'età non valida !!");
 		}
 
-		// Esercizio: Sono un docente devo assegnare dei voti. Se il voro è sotto il 70
-		// assegno F, se il voro è sotto 80 assegno C, se il voto è sotto 90 assegno B,
+		// Esercizio: Sono un docente devo assegnare dei voti. Se il voTo è sotto il 70
+		// assegno F, se il voTo è sotto 80 assegno C, se il voto è sotto 90 assegno B,
 		// se è maggiore di 90 assegno A
 
-		int voto = -120;
+		int voto = 100;
 
 		if (voto < 70 && voto > 0) {
 			System.out.println("Votazione: F");
@@ -58,6 +69,8 @@ public class If_Statement {
 			System.out.println("Voto inserito non corretto");
 		}
 
+		
+		
 		if (voto <= 100 && voto > 0) {
 
 			if (voto >= 90) {
