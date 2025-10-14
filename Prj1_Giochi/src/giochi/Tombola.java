@@ -1,5 +1,6 @@
 package giochi;
 
+import java.util.ArrayList;
 import java.util.Random;
 
 public class Tombola {
@@ -13,10 +14,14 @@ public class Tombola {
 		
 		Random rand = new Random();
 		
+		int[] numEstratti = new int[20];
+		
 		for(int i = 1; i <= 20; i++ ) {
 			System.out.print(rand.nextInt(90) + 1 + " - ");
 		}
 	}
+	
+	//Questo main è giusto per testare il metodo
 	
 	public static void main(String[] args) {
 		gioca();
