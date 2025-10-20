@@ -23,6 +23,12 @@ public class Persona {
 		this.matricola = matricolatore();
 	}
 	
+	public Persona(String nome, String cognome) {
+		this.nome = nome;
+		this.cognome = cognome;
+		this.matricola = matricolatore();
+	}
+	
 	//Essendo un metodo static appartiene solo alla classe, non all'istanza, cioè non appartiene all'oggetto. 
 	public static int matricolatore() {
 		Random rand = new Random();
