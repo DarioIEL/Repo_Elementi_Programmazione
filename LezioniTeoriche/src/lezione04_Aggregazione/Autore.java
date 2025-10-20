@@ -1,4 +1,4 @@
-package lezione04_aggregazione;
+package lezione04_Aggregazione;
 
 public class Autore {
 	String nome;
