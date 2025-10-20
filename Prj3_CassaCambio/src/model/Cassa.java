@@ -30,8 +30,6 @@ public class Cassa {
 	}
 	
 	public double[] calcolaRestante() {
-		System.out.println("Saldo in €: " + this.saldo);
-		System.out.println("Fondo in $: " + this.fondoIniziale);
 		double[] restante = new double[2];
 		restante[0] = this.saldo;
 		restante[1] = this.fondoIniziale;
