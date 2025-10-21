@@ -1,6 +1,7 @@
 package lezione06_Incapsulamento;
 
 import java.util.ArrayList;
+import java.util.Arrays;
 import java.util.List;
 
 public class Main {
@@ -21,6 +22,7 @@ public class Main {
 		
 		System.out.println(pers1);
 		
+		System.out.println("NUOVO CORSO");
 		
 		Corso corso1 = new Corso("Elementi di Programmazione", 200);
 		
@@ -31,8 +33,15 @@ public class Main {
 		studentiIscritti.add(new Studente("Maria", "Gialli", 2025));
 		
 		corso1.setStudenti(studentiIscritti);
-
+		
+		RespoCorso responsabile = new RespoCorso("Tina", "Ponte");
+		
+		responsabile.setCorso(corso1);
+		
+		corso1.setRespo(responsabile);
+	
 		System.out.println(corso1);
 		
+//		System.out.println(responsabile);
 	}
 }

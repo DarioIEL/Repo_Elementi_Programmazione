@@ -8,6 +8,15 @@ public class Corso {
 	private String nomeCorso;
 	private int durataCorso;
 	private List<Studente> studenti;
+	private RespoCorso respo;
+
+	public RespoCorso getRespo() {
+		return respo;
+	}
+
+	public void setRespo(RespoCorso respo) {
+		this.respo = respo;
+	}
 
 	public Corso(String nomeCorso, int durataCorso) {
 		this.nomeCorso = nomeCorso;
@@ -54,7 +63,7 @@ public class Corso {
 		}
 
 		return "Corso [nomeCorso=" + nomeCorso + ", durataCorso=" + durataCorso + ", studenti Iscritti="
-				+ studentiIScritti + "]";
+				+ studentiIScritti + " \nResponsabile Corso: " + respo.getNome() + " "+ respo.getCognome() + "]";
 	}
 
 }
