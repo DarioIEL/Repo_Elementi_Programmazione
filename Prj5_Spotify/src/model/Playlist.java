@@ -35,7 +35,7 @@ public class Playlist {
 
 		info.append("Info Playlist");
 		info.append("\nNome Playlist: " + this.nome);
-		info.append("\nSpazio Brani: " + (10 - this.listaBrani.size()));
+		info.append("\nSpazio Brani: " + (SPAZIO - this.listaBrani.size()));
 
 		if (listaBrani.size() != 0) {
 			String braniIn = "";
@@ -53,5 +53,9 @@ public class Playlist {
 		}
 		
 		return false;
+	}
+	
+	public int getSize() {
+		return this.listaBrani.size();
 	}
 }

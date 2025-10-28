@@ -20,7 +20,7 @@ public class PlaylistCtrl {
 	public PlaylistCtrl(String nomePL) {
 		this.playList = new Playlist(nomePL);
 
-		while (playList.getSizeDisponibilePL()) {
+		while (this.playList.getSize() < 3) {
 			addBraniIniziali();
 		}
 	}
