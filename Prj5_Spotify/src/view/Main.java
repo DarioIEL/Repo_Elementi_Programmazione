@@ -2,12 +2,14 @@ package view;
 
 import java.util.Scanner;
 
+import controller.DatabaseCtrl;
 import controller.PlaylistCtrl;
 
 public class Main {
 
 	private static Scanner scan;
 	private  static PlaylistCtrl playlist;
+	private static DatabaseCtrl dbCtrl;
 
 	public static void main(String[] args) {
 
@@ -39,6 +41,11 @@ public class Main {
 					playlist.mostraInfo();
 					break;
 				case 5:
+					
+					dbCtrl = new DatabaseCtrl();
+					dbCtrl.leggiDB();
+					break;
+				case 6:
 					System.out.println("Arrivederci");
 					flag = false;
 					break;
@@ -57,6 +64,7 @@ public class Main {
 		System.out.println("2. Aggiungi brano alla playlist");
 		System.out.println("3. Rimuovi brano dalla playlist");
 		System.out.println("4. Mostra info playlist");
-		System.out.println("5. Esci");
+		System.out.println("5. Mostra DB Canzoni (file.csv)");
+		System.out.println("6. Esci");
 	}
 }
