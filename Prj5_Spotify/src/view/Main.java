@@ -9,7 +9,7 @@ public class Main {
 
 	private static Scanner scan;
 	private  static PlaylistCtrl playlist;
-	private static DatabaseCtrl dbCtrl;
+	private static DatabaseCtrl dbCtrl = new DatabaseCtrl();
 
 	public static void main(String[] args) {
 
@@ -31,7 +31,7 @@ public class Main {
 					if(playlist == null) {
 						System.out.println("Devi prima creare una playlist per poter aggiungere i brani");
 					}else {
-						playlist.addBranoPL();;
+						playlist.addBranoPL();
 					}
 					break;
 				case 3:
@@ -41,11 +41,20 @@ public class Main {
 					playlist.mostraInfo();
 					break;
 				case 5:
-					
-					dbCtrl = new DatabaseCtrl();
 					dbCtrl.leggiDB();
 					break;
 				case 6:
+					scan.nextLine(); //per pulire lo scanner
+					System.out.println("Inserisci il titolo del brano:");
+					String titolo = scan.nextLine();
+					System.out.println("Inserisci la/il cantante:");
+					String cantante = scan.nextLine();
+					dbCtrl.aggiungiBranoAlDB(titolo, cantante);
+					break;
+				case 7:
+					dbCtrl.pulisciDB();
+					break;
+				case 8:
 					System.out.println("Arrivederci");
 					flag = false;
 					break;
@@ -65,6 +74,8 @@ public class Main {
 		System.out.println("3. Rimuovi brano dalla playlist");
 		System.out.println("4. Mostra info playlist");
 		System.out.println("5. Mostra DB Canzoni (file.csv)");
-		System.out.println("6. Esci");
+		System.out.println("6. Inserisci un nuovo brano nel DB (file.csv)");
+		System.out.println("7. Pulisci DB");
+		System.out.println("8. Esci");
 	}
 }

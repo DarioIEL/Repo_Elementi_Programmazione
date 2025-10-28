@@ -21,4 +21,14 @@ public class Brano {
 		return this.titolo + " - " + this.autore;
 	}
 
+	public String getTitolo() {
+		return titolo;
+	}
+
+	public String getAutore() {
+		return autore;
+	}
+	
+	
+
 }
